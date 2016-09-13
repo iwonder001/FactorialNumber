@@ -6,9 +6,12 @@ public class LabFour {
 		// TODO Auto-generated method stub
 
 		System.out.println("Welcome to the Factorial Calculator!");
+		
+		String cont;
+		cont = "y";
 
 		// make while loop. Must make y= true and false to stop the loop
-		// while (cont.equalsIgnoreCase("Y")) {
+		while (cont.equalsIgnoreCase("Y")) {
 
 		Scanner input = new Scanner(System.in);
 		// must use data type long
@@ -23,14 +26,20 @@ public class LabFour {
 		// the previous result from the loop.
 		for (int i = 1; i <= greater; i++) {
 			result *= i;
+			
 			// result = result * i;
 			// result starts 1 * i (1) = 1
+			// (take new result value from above line and now it is the result in the next loop go around)
 			// result 1 * i (2) = 2
 			// result 2 * i ( 3) = 6
 
 		} // for loop
 		System.out.println("The factorial of " + greater + " is " + result);
-
+		
+		System.out.println("Continue? (y/n):");
+		cont = input.nextLine();
+		}//while loop
+		
 	}// psvm
 
 }// class
