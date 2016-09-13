@@ -7,20 +7,23 @@ public class LabFour {
 
 		System.out.println("Welcome to the Factorial Calculator!");
 
-
+		// make while loop. Must make y= true and false to stop the loop
 		// while (cont.equalsIgnoreCase("Y")) {
 
 		Scanner input = new Scanner(System.in);
 		// must use data type long
+		// capture user input and put into for loop
 		System.out.println("Enter an interger that's greater than 0 but less than 10: ");
 		long greater = input.nextLong();
-		
-//making a place to hold the result
+
+		// making a place to hold the result
 		long result = 1;
-		//loop goes around one at a time.  The results are an primitive data type (long) so it replaces current info in place in stack and erases the previous result from the loop.  
+		// loop goes around one at a time. The results are an primitive data
+		// type (long) so it replaces current info in place in stack and erases
+		// the previous result from the loop.
 		for (int i = 1; i <= greater; i++) {
 			result *= i;
-			//result = result * i;
+			// result = result * i;
 			// result starts 1 * i (1) = 1
 			// result 1 * i (2) = 2
 			// result 2 * i ( 3) = 6
@@ -31,5 +34,5 @@ public class LabFour {
 	}// psvm
 
 }// class
-	// capture user input and put into for loop
-	// make while loop. Must make y= true and false to stop the loop
+	
+
