@@ -11,7 +11,7 @@ public class LabFour {
 		cont = "y";
 
 		// make while loop. Must make y= true and false to stop the loop
-		while (cont.equalsIgnoreCase("Y")) {
+		while (cont.equalsIgnoreCase("y")) {
 
 		Scanner input = new Scanner(System.in);
 		// must use data type long
@@ -36,8 +36,15 @@ public class LabFour {
 		} // for loop
 		System.out.println("The factorial of " + greater + " is " + result);
 		
+		/*going from capturing user input of a number (long) to capturing user input of a string (letter) 
+		 next, you have to clear out \n (new line/line character) by doing 
+		 cont = input.nextLine();
+		 cont = input.nextLine();   twice   */
 		System.out.println("Continue? (y/n):");
 		cont = input.nextLine();
+		cont = input.nextLine();
+		
+		
 		}//while loop
 		
 	}// psvm
