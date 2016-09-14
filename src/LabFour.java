@@ -9,17 +9,18 @@ public class LabFour {
 		
 		String cont;
 		cont = "y";
-
+		Scanner input = new Scanner(System.in);
 		// make while loop. Must make y= true and false to stop the loop
 		while (cont.equalsIgnoreCase("y")) {
 
-		Scanner input = new Scanner(System.in);
+		//Scanner input = new Scanner(System.in);
 		// must use data type long
 		// capture user input and put into for loop
 		System.out.println("Enter an interger that's greater than 0 but less than 10: ");
 		long greater = input.nextLong();
 
-		// making a place to hold the result
+		/** making a place to hold the result.  You want result to keep reseting to 1 everytime it goes through
+		    the loop that is why I am initializing result in the loop here*/
 		long result = 1;
 		// loop goes around one at a time. The results are an primitive data
 		// type (long) so it replaces current info in place in stack and erases
